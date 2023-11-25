@@ -10,7 +10,7 @@ def create_app(config=None):
     app = Flask(__name__, instance_relative_config=False)
 
     app.config.from_mapping(
-        SECRET_KEY=os.uraqndom(32),
+        SECRET_KEY=os.urandom(32),
         # SQLALCHEMY_DATABASE_URI = "sqlite:///instance/database/database.db",
         # SQLALCHEMY_TRACK_MODIFICATIONS = False,
     )
